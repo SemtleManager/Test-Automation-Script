@@ -5,6 +5,8 @@
 
 ------
 
+<h4><개발 환경><h4/>
+IDE : Pycharm<br/>
 언어 : Python<br/>
 기술 : Selenium<br/>
 작성자 : 이선민<br/>
