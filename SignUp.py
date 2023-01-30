@@ -6,21 +6,20 @@ from selenium.webdriver.support.ui import Select
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 import openpyxl
 from datetime import datetime
 
 scene_list=['정상 시나리오','아이디 입력란 공백','PW 입력란 공백'] #시나리오 리스트
 inform_list=['단계','시나리오','날짜','합격 여부','오류 코드'] #각 시나리오에 대한 테스트케이스 수행 정보
 exl_file = openpyxl.Workbook()  # 엑셀 보고서 작성
-exl_sheet = exl_file.active
+exl_sheet = exl_file.activeg
 exl_sheet.append(inform_list)
 exl_sheet.column_dimensions['B'].width=20
 exl_sheet.column_dimensions['C'].width=40
 exl_sheet.column_dimensions['E'].width=105
 
 chromedriver='C:\devpython\Webdriver\chromedriver.exe'
-tester=webdriver.Chrome(service=Service(chromedriver)) #브라우저 : Chrome
+tester = webdriver.Chrome(service=Service(chromedriver)) #브라우저 : Chrome
 
 def signup_normal(scene : int): #구분 값
     now = datetime.now()
