@@ -12,7 +12,7 @@ from datetime import datetime
 scene_list=['정상 시나리오','아이디 입력란 공백','PW 입력란 공백'] #시나리오 리스트
 inform_list=['단계','시나리오','날짜','합격 여부','오류 코드'] #각 시나리오에 대한 테스트케이스 수행 정보
 exl_file = openpyxl.Workbook()  # 엑셀 보고서 작성
-exl_sheet = exl_file.activeg
+exl_sheet = exl_file.active
 exl_sheet.append(inform_list)
 exl_sheet.column_dimensions['B'].width=20
 exl_sheet.column_dimensions['C'].width=40
