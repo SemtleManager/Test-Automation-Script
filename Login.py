@@ -10,7 +10,7 @@ import openpyxl
 from datetime import datetime
 
 scene_list = ['정상 시나리오', 'ID 입력 오류', 'PW 입력 오류','존재 하지 않는 계정 로그인']  # 시나리오 리스트
-inform_list = ['단계', '테스트 케이스', '입력 값','기대 값','날짜', '합격 여부', '오류 코드']  # 각 시나리오에 대한 테스트케이스 수행 정보
+inform_list = ['단계', '테스트 케이스', '입력 값','기대 값','날짜', '합격 여부', '오류 코드','비고']  # 각 시나리오에 대한 테스트케이스 수행 정보
 exl_file = openpyxl.Workbook()  # 엑셀 보고서 작성
 exl_sheet = exl_file.active
 exl_sheet.append(inform_list)
